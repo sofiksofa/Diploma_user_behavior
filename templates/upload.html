@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Загрузка весов модели</title>
+</head>
+<body>
+    <h2>Загрузите файл весов модели (.pth)</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="weights" accept=".pth,.pt">
+        <button type="submit">Загрузить</button>
+    </form>
+
+    <h3>Тестовое предсказание</h3>
+    <form action="/predict" method="post">
+        <button type="submit">Выполнить тест</button>
+    </form>
+</body>
+</html>
